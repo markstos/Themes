@@ -1277,3 +1277,47 @@ html.dark-mode h1, h2, h3, h4, h5, h6 {
         color: var(--color-lighter-gray);
     }
 }
+
+
+/* begin markstos overrides */
+.gh-author-image {
+    display: none;
+}
+
+.gh-author-name {
+    display: none;
+}
+
+.gh-card-author {
+    display: none;
+}
+
+.gh-card-footer-sep {
+    display: none;
+}
+
+.gh-article-length {
+    display: none;
+}
+
+.gh-article-meta-sep {
+    display: none;
+}
+
+.gh-subscribe-title {
+    display: none;
+}
+
+.gh-foot {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.ms-archive .gh-topic-link {
+    display: none;
+}
+
+.ms-archive .gh-topic-list {
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+}
+/* end markstos overrides */

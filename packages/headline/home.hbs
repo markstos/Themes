@@ -5,23 +5,19 @@
         <section class="gh-topic gh-topic-grid">
             <h2 class="gh-topic-name">
                 {{#match pagination.pages ">" 1}}
-                    <a href="{{@site.url}}/page/2">Latest</a>
+                    <a href="{{@site.url}}/page/2">Featured</a>
                 {{else}}
-                    Latest
+                    Featured
                 {{/match}}
             </h2>
 
             <div class="gh-topic-content">
-                {{#foreach posts limit="7"}}
-                    {{> "loop-grid"}}
-                {{/foreach}}
+                {{#get "posts" include="authors" filter="featured:true" limit="7"}}
+                    {{#foreach posts}}
+                        {{> "loop-grid"}}
+                    {{/foreach}}
+                {{/get}}
             </div>
-
-            <footer class="gh-topic-footer">
-                {{#match pagination.pages ">" 1}}
-                    <a class="gh-topic-link" href="{{@site.url}}/page/2">Show more {{> "icons/arrow"}}</a>
-                {{/match}}
-            </footer>
         </section>
 
         {{#if @custom.enter_tag_slugs_for_primary_sections}}
