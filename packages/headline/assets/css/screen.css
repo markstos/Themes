@@ -1320,4 +1320,14 @@ html.dark-mode h1, h2, h3, h4, h5, h6 {
 .ms-archive .gh-topic-list {
     grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
 }
+
+.site-header-content {
+    min-height: 200px !important;
+    max-height: 300px;
+}
+.gh-cover-title {
+    text-transform: capitalize;
+}
+
+
 /* end markstos overrides */
